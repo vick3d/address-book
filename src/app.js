@@ -13,7 +13,7 @@ const renderContacts = () => {
             li.innerHTML = `
             <div class="card">
                 <div class="image">
-                    <img src="https://ca-address-book.herokuapp.com/images/pine.jpg" />
+                    <img src="https://pbs.twimg.com/profile_images/378800000099157593/d4084a181e9382e070783858c0ccafd8_400x400.jpeg" />
                 </div>
                 <div class="content">
                     <h1>${contact.name}</h1>
@@ -65,5 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
         contacts.push(contact)
         storage.setItem('contacts', JSON.stringify(contacts))
         renderContacts()
+        addContactForm.reset()
     })
 })
