@@ -44,6 +44,13 @@ class AddressBookWorld {
         expect(actualCount).to.be.eq(expectedCount)
     }
 
+    async pageDoesNotHaveTextContent(unexpectedContent) {
+        const pageContent = await this.page.content()
+        let actualContent = pageContent.match(unexpectedContent)
+
+        expect(actualContent).to.be.eq(null)
+    }
+
     btnSelectorFromName(btnName) {
         switch (btnName) {
         case 'add contact':
@@ -57,6 +64,7 @@ class AddressBookWorld {
             break
         }
     }
+
 }
 
 setWorldConstructor(AddressBookWorld)
