@@ -40,7 +40,7 @@ Feature: Create contacts
     And I fill in "Notes" with "A really awsome girl :-)"
     And I fill in "Twitter" with "janedoe"
     And I click "Save contact"
-    Then I should have 2 contact in my address book
+    Then I should have 2 contacts in my address book
     And I should see "John Doe"
     And I should see "Jane Doe"
     And I should not see "You have no contact in your address book"
