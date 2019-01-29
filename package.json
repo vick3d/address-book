@@ -20,5 +20,6 @@
     "superstatic": "^6.0.4",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1"
-  }
+  },
+  "repository": "https://github.com/vick3d/address-book.git"
 }
