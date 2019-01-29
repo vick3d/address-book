@@ -1,7 +1,7 @@
 const { Given, Then, When } = require('cucumber')
 
 Given('I visit the site', async function() {
-    return 'pending'
+    return await this.openHomePage()
 })
 
 Then('I should see {string}', async function(content) {
