@@ -1,1 +1,20 @@
-# Address Book [es2015]
+# Address Book [es2015/ES6] [WIP]
+<br>
+<br>
+
+## As a user
+In order to stay in touch with my friends
+I would like to be able to create a contact for them in my address book
+
+## As a user
+In order to contact my friends
+I would like to be able to view a list of my saved contacts
+
+## As a user
+In order to keep my friends' contact details accurate
+I would like to be able to update them when needed
+
+
+## As a user [WIP]
+In order to keep my contact list up to date
+I would like to be able to delete contacts
