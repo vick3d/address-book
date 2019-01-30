@@ -7,13 +7,15 @@ const renderContacts = () => {
     if (contacts) {
         div.innerHTML = ''
         const ul = document.createElement('ul')
+        ul.className = 'list-reset'
         
         contacts.forEach(contact => {
             let li = document.createElement('li')
+            li.className = 'list-reset'
             li.innerHTML = `
             <div class="card">
                 <div class="image">
-                    <img src="https://pbs.twimg.com/profile_images/378800000099157593/d4084a181e9382e070783858c0ccafd8_400x400.jpeg" />
+                    <img src="./images/person.png"/>
                 </div>
                 <div class="content">
                     <h1>${contact.name}</h1>
