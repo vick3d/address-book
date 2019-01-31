@@ -45,7 +45,7 @@ const renderContacts = () => {
             deleteButton.classList = 'delete'
             deleteButton.id = 'delete'
             deleteButton.innerHTML = `
-            <i class="material-icons">close</i>
+           <i class="material-icons">close</i>
             `
         subDiv.appendChild(deleteButton)    
         mainDiv.appendChild(subDiv)                        
