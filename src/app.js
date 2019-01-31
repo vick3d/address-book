@@ -10,7 +10,7 @@ const renderContacts = () => {
 
     let div = document.querySelector('.contact-list')
 
-    if (contacts) {
+    if (contacts && contacts.length > 0) {
         div.innerHTML = ''
         const mainDiv = document.createElement('div')
         
@@ -45,9 +45,7 @@ const renderContacts = () => {
         const deleteButton = document.createElement('button')
             deleteButton.classList = 'delete'
             deleteButton.id = 'delete'
-            deleteButton.innerHTML = `
-           <i class="material-icons">close</i>
-            `
+            deleteButton.innerHTML = 'X'
         subDiv.appendChild(deleteButton)    
         mainDiv.appendChild(subDiv)                        
         })
