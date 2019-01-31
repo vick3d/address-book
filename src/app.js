@@ -70,11 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let contacts = JSON.parse(storage.getItem('contacts')) || []
 
         contacts.forEach(contact => {
-            
+    
           if(contact.id == id) {
               contacts.splice(contacts.indexOf(contact),1)
           } else return
-    })  
+    })
          
         storage.setItem('contacts', JSON.stringify(contacts))
         renderContacts()
