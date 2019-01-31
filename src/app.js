@@ -23,15 +23,15 @@ const renderContacts = () => {
               <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                <div class="mb-8">
                 <p class="text-sm text-grey-dark flex items-center">
-                 Something
+                 ${contact.name}
                 </p>
-                <div class="text-black font-bold text-xl mb-2"> something else</div>
-                <p class="text-grey-darker text-base">something something</p>
+                <div class="text-black font-bold text-xl mb-2">${contact.company}</div>
+                <p class="text-grey-darker text-base">${contact.notes}</p>
                 </div>
                 <div class="flex items-center">
                     <div class="text-sm">
-                        <p class="text-black leading-none"> name here?</p>
-                        <p class="text-grey-dark">something</p>
+                        <p class="text-black leading-none"> Email: ${contact.email}</p>
+                        <a href="https://www.twitter.com/${contact.twitter}">@${contact.twitter}</a>
                     </div>
                 </div>
             </div>
