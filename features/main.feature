@@ -44,3 +44,4 @@ Feature: Create contacts
     And I should see "John Doe"
     And I should see "Jane Doe"
     And I should not see "You have no contact in your address book"
+    
