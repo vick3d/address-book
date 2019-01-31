@@ -15,6 +15,7 @@ const renderContacts = () => {
         const mainDiv = document.createElement('div')
         
         
+        
         contacts.forEach(contact => {
             let subDiv = document.createElement('div')
             subDiv.id = contact.id
@@ -23,7 +24,7 @@ const renderContacts = () => {
             <div class="max-w md w-full lg:flex">
                 <div class="h-48 mb-2 lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('http://www.valleyroadwines.com/wp-content/uploads/2013/04/Anon-Person.png')" title="Picture">
             </div>
-              <div id="kort" class="w-1/6 mb-2 border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 pr-1 flex flex-col justify-between leading-normal">
+              <div class="w-full mb-2 border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 pr-1 flex flex-col justify-between leading-normal">
                   <div class="mb-8">
                     <p class="flex justify-between text-black font-bold text-xl">
                     ${contact.name}
