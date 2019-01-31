@@ -12,14 +12,14 @@ const renderContacts = () => {
 
     if (contacts) {
         div.innerHTML = ''
-        const ul = document.createElement('div')
+        const mainDiv = document.createElement('div')
         
         
         contacts.forEach(contact => {
-            let li = document.createElement('div')
-            li.id = contact.id
+            let subDiv = document.createElement('div')
+            subDiv.id = contact.id
                 
-            li.innerHTML = `
+            subDiv.innerHTML = `
             <div class="max-w md w-full lg:flex">
                 <div class="h-48 mb-2 lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('http://www.valleyroadwines.com/wp-content/uploads/2013/04/Anon-Person.png')" title="Picture">
             </div>
@@ -47,11 +47,11 @@ const renderContacts = () => {
             deleteButton.innerHTML = `
             <i class="material-icons">close</i>
             `
-        li.appendChild(deleteButton)    
-        ul.appendChild(li)                        
+        subDiv.appendChild(deleteButton)    
+        mainDiv.appendChild(subDiv)                        
         })
 
-        div.appendChild(ul)
+        div.appendChild(mainDiv)
     } else {
         div.innerHTML = '<p>You have no contacts in your address book</p>'
     }
@@ -63,9 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
     renderContacts()
     const addContactForm = document.querySelector('.new-contact-form')
 
-    const delete_button = document.querySelector('.contact-list')
+    const deleteButton = document.querySelector('.contact-list')
     
-    delete_button.addEventListener('click',event => {
+    deleteButton.addEventListener('click',event => {
         let id = event.target.parentNode.id
         let contacts = JSON.parse(storage.getItem('contacts')) || []
 
@@ -80,6 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
         renderContacts()
    
     })
+
+
+
 
   
     addContactForm.addEventListener('submit', event => {
