@@ -28,7 +28,7 @@ yarn run cucumber
 ```
 
 # Deployment
-addressbookjv.netlify.com
+https://www.addressbookjv.netlify.com
 
 
 # Authors
