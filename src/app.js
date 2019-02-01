@@ -43,7 +43,7 @@ const renderContacts = () => {
         </div>
          `
         const deleteButton = document.createElement('button')
-            deleteButton.classList = 'delete'
+            deleteButton.classList = 'delete container flex justify-end pr-1 -mt-8'
             deleteButton.id = 'delete'
             deleteButton.innerHTML = 'X'
         subDiv.appendChild(deleteButton)    
