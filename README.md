@@ -27,7 +27,7 @@ and this will run the unit tests since we are working in a TDD way
 yarn run cucumber
 ```
 
-# Deployment [WIP]
+# Deployment
 addressbookjv.netlify.com
 
 
